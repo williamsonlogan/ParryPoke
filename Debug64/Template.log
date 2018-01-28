@@ -1,15 +1,3 @@
-﻿  Button.cpp
-  Core.cpp
-Core.cpp(482): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-Core.cpp(500): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-Core.cpp(510): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-Core.cpp(517): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-Core.cpp(524): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-Core.cpp(535): warning C4244: 'argument': conversion from 'WPARAM' to 'unsigned int', possible loss of data
-  Game.cpp
-  template.cpp
-  Text.cpp
-Text.cpp(29): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  TitleScreen.cpp
-  Generating Code...
+﻿  TitleScreen.cpp
+TitleScreen.cpp(7): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   Template.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\App Game Kit 2\Tier 2\apps\ParryPoke\Final\ParryPoke64.exe

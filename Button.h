@@ -1,6 +1,7 @@
 #pragma once
 
 #include "agk.h"
+#include "Text.h"
 #include <iostream>
 
 using namespace std;
@@ -8,13 +9,15 @@ using namespace std;
 class Button
 {
 public:
-	Button();
+	Button(int xpos, int ypos, int xsize, int ysize, string text);
 	~Button();
+
+	void draw();
 private:
 	int _xpos;
 	int _ypos;
-	int _xsize;
-	int _ysize;
+	int _width;
+	int _height;
 	string _text;
 };
 

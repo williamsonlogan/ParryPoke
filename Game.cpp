@@ -56,7 +56,7 @@ void Game::GameLoop()
 		}
 		else
 		{
-			agk::PlayMusicOGG(1, 1);
+			//agk::PlayMusicOGG(1, 1);
 			agk::DeleteText(0);
 			GAMESTATE = TITLE;
 		}
@@ -65,9 +65,19 @@ void Game::GameLoop()
 	case TITLE:
 		title.DrawTitle();
 		title.CheckInput();
+
+		if (title.GetStarted())
+		{
+			//TODO: Some kind of POW! sound effect
+			GAMESTATE = MENU;
+		}
 		break;
 	case MENU:
+	{
+		Button start(1280 / 2, 720 / 2, 120, 90, "Start");
+		start.draw();
 		break;
+	}
 	case CHARSELECT:
 		break;
 	case FIGHT:
