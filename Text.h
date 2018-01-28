@@ -11,7 +11,7 @@ public:
 	Text(int x, int y, int fontSize, string fontPath, string text);
 	~Text();
 
-	void draw();
+	void draw(); //Actually draw text using AGK functions
 	int GetIndex() { return _index; }
 private:
 	int _index;

@@ -21,10 +21,11 @@ void Game::CreateGame()
 
 void Game::BeginGame()
 {
+	//Load in placeholder theme
 	agk::LoadMusicOGG(1, "music/GuileTheme.ogg");
 }
 
-TitleScreen title;
+TitleScreen title; //Globalize title screen, will need unloading
 
 void Game::GameLoop()
 {
@@ -43,6 +44,7 @@ void Game::GameLoop()
 
 	time = agk::Timer();
 
+	//Gamestate Machine
 	switch (GAMESTATE)
 	{
 	case SPLASH:
@@ -61,15 +63,6 @@ void Game::GameLoop()
 
 		break;
 	case TITLE:
-		/*if (!title.GetDrawn())
-		{
-			title.DrawTitle();
-		}
-		else
-		{
-			title.CheckInput();
-		}*/
-
 		title.DrawTitle();
 		title.CheckInput();
 		break;

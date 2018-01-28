@@ -18,7 +18,7 @@ Text::Text(int x, int y, int fontSize, string fontPath, string text)
 
 Text::~Text()
 {
-	agk::DeleteText(_index);
+	agk::DeleteText(_index); // Properly unloads text from agk
 }
 
 void Text::draw()
