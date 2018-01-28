@@ -24,7 +24,8 @@ Text::~Text()
 void Text::draw()
 {
 	agk::SetTextString(_index, _text.c_str());
-	agk::SetTextPosition(_index, _posX, _posY);
-	agk::SetTextFont(_index, agk::LoadFont(_fontPath.c_str()));
+	_fontID = agk::LoadFont(_fontPath.c_str());
+	agk::SetTextFont(_index, _fontID);
 	agk::SetTextSize(_index, _fontSize);
+	agk::SetTextPosition(_index, _posX - agk::GetTextTotalWidth(_index)/2, _posY - agk::GetTextTotalHeight(_index) / 2);
 }

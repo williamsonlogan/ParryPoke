@@ -24,8 +24,11 @@ void Game::BeginGame()
 	agk::LoadMusicOGG(1, "music/GuileTheme.ogg");
 }
 
+TitleScreen title;
+
 void Game::GameLoop()
 {
+	agk::ClearScreen();
 	agk::Print((int)agk::ScreenFPS());
 
 	if (agk::GetRawKeyPressed(13) && agk::GetRawKeyPressed(16))
@@ -55,16 +58,29 @@ void Game::GameLoop()
 			agk::DeleteText(0);
 			GAMESTATE = TITLE;
 		}
+
+		break;
 	case TITLE:
+		/*if (!title.GetDrawn())
+		{
+			title.DrawTitle();
+		}
+		else
+		{
+			title.CheckInput();
+		}*/
 
+		title.DrawTitle();
+		title.CheckInput();
+		break;
 	case MENU:
-
+		break;
 	case CHARSELECT:
-
+		break;
 	case FIGHT:
-
+		break;
 	case PAUSE:
-
+		break;
 	default:
 		break;
 	}

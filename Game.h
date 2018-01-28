@@ -2,6 +2,7 @@
 
 #include "agk.h"
 #include "UI.h"
+#include "TitleScreen.h"
 
 enum GameState {SPLASH, TITLE, MENU, CHARSELECT, FIGHT, PAUSE};
 

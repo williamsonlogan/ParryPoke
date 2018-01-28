@@ -15,6 +15,7 @@ public:
 	int GetIndex() { return _index; }
 private:
 	int _index;
+	int _fontID;
 	int _posX;
 	int _posY;
 	int _fontSize;
