@@ -31,4 +31,6 @@ void Text::draw()
 	agk::SetTextSize(_index, _fontSize);
 	agk::SetTextPosition(_index, _posX - agk::GetTextTotalWidth(_index)/2, _posY - agk::GetTextTotalHeight(_index) / 2);
 	agk::SetTextColor(_index, agk::GetColorRed(_color), agk::GetColorGreen(_color), agk::GetColorBlue(_color), 255);
+
+	agk::Render();
 }

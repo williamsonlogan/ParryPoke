@@ -1,7 +1,6 @@
 ﻿  Button.cpp
 Button.cpp(21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 Button.cpp(24): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Text.cpp
-Text.cpp(31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
+Button.cpp(32): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+Button.cpp(33): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Template.vcxproj -> C:\Program Files (x86)\Steam\steamapps\common\App Game Kit 2\Tier 2\apps\ParryPoke\Final\ParryPoke64.exe

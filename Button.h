@@ -13,6 +13,7 @@ public:
 	~Button();
 
 	void draw();
+	bool ifClick();
 private:
 	int _xpos;
 	int _ypos;

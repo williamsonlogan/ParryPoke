@@ -8,7 +8,7 @@ void Game::CreateGame()
 	agk::SetWindowSize(_resW, _resH, _fullscreen);
 	agk::SetWindowAllowResize(false);
 	agk::SetBorderColor(0, 0, 0);
-	agk::SetClearColor(0,0,0);
+	agk::SetClearColor(255,0,0);
 	agk::SetFolder("media/");
 
 	//Graphics Options -SHOULD BE A CONFIG LATER-
@@ -74,8 +74,14 @@ void Game::GameLoop()
 		break;
 	case MENU:
 	{
-		Button start(1280 / 2, 720 / 2, 120, 90, "Start");
+		Button start(1280 / 2, 720 / 2, 120, 60, "Start");
 		start.draw();
+		if (start.ifClick())
+		{
+			agk::PrintC("Click");
+		}
+
+		agk::Render();
 		break;
 	}
 	case CHARSELECT:
